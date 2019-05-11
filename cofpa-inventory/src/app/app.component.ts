@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cofpa-inventory';
+  title = 'Central Oregeon Foster Parent Association Inventory';
 }
