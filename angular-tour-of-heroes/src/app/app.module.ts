@@ -1,20 +1,42 @@
+//"Root module" where main component is defined
+//Basically this is Main ?
+
+//import components that are used in the app
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
+//Angular's mechanism for communicating with a remote server
+import { HttpClientModule }    from '@angular/common/http';
+//checks to see which is bootsrtapped and loads it (AppComponent)
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeroesComponent
-  ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent,
+    HeroSearchComponent
+  ],
+  bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
