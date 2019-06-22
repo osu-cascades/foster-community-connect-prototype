@@ -7,7 +7,7 @@
   <meta name="description" content="Connecting the needs of foster families with donors.">
   <meta name="author" content="Shayla Lane">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -26,12 +26,10 @@
         <li class="nav-item active mr-3">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
+
         <li class="nav-item mr-3">
-          <a class="btn btn-success btn-sm mt-1" href="giveform.html">Give</a>
-        </li>
-        <li class="nav-item mr-3">
-          <a class="btn btn-success btn-sm mt-1" href="getform.html">Get</a>
-        </li>
+            <a class="btn btn-success btn-sm mt-1" href="getform.html">Get</a>
+          </li>
         <!-- <li class="nav-item dropdown mr-3">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -50,54 +48,41 @@
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div> -->
+      </form> -->
+    </div>
   </nav>
 
   <main role="main" class="container">
-    
 
     <div class="starter-template">
       <h1>Foster. Community. Connect.</h1>
-      <p class="lead">Bridging the gap between central oregon and it's children in foster care.</p>
+      <p class="lead">Fostering isn't the only way to help support a foster child.</p>
     </div>
-    <div class="row">
-      <div class="col-4">
-          <img src="http://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/istock_000019406628small.jpg?itok=7OQ0zdOR" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-4">
-          <img src="https://texarkanaemergencycenter.com/wp-content/uploads/2016/09/child-eating.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-4">
-          <img src="http://www.crylaughheal.com/wp-content/uploads/2017/05/children-laugh.jpg" class="img-fluid" alt="Responsive image">
-      </div>
+  <div class="row">
+    <div class="col">First Name
+      <input type="text" class="form-control" placeholder="First name">
     </div>
+    <div class="col">Last Name
+      <input type="text" class="form-control" placeholder="Last name">
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <a href="giveform.html"><img src="https://www.mcleboard.org/images/UploadedImages/Give.jpg" class="rounded" alt="..."></a>
-        </div>
-        <div class="col">
-          <div class="text-right">
-            <a href="getform.html"><img src="https://stjuliansparishchurch.files.wordpress.com/2015/08/receive.png" class="rounded" alt="..."style="width:425px;height:282px;"></a>
-          </div>
-        </div>
-      </div>
+  </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"></small>
     </div>
-    <div class="row">
-      <div class="col-4">
-          <img src="https://d39l2hkdp2esp1.cloudfront.net/img/photo/167659/167659_00_2x.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-4">
-          <img src="http://www.mykidsadventures.com/wp-content/uploads/2014/07/jdj-mom-son-building-castle-istock-42476140.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-4">
-          <img src="https://ak5.picdn.net/shutterstock/videos/1016408695/thumb/1.jpg?ip=x480" class="img-fluid" alt="Responsive image">
-          
-      </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Phone Number</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"></small>
     </div>
-
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"><h6>What items will you be donating?</h6></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+      </div>
+      <hr class="mb-4">
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Donation</button>
+    </form>
   </main><!-- /.container -->
   <footer class="text-muted mt-5">
     <div class="container">
