@@ -65,23 +65,24 @@
       <input type="text" class="form-control" placeholder="Last name">
     </div>
   </div>
+  <form id="request-form" method="POST" action="/request">
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <label for="sender_email">Email address</label>
+      <input type="email" class="form-control" id="sender_email" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text text-muted"></small>
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Phone Number</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <label for="phone_number">Phone Number</label>
+      <input type="text" class="form-control" id="phone_number" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text text-muted"></small>
     </div>
       <div class="form-group">
-        <label for="exampleFormControlTextarea1"><h6>What item(s) are you requesting?</h6></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        <label for="items_requested"><h6>What item(s) are you requesting?</h6></label>
+        <textarea class="form-control" id="items__requested" input type="text" rows="10"></textarea>
       </div>
       <hr class="mb-4">
       <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Request</button>
-    </form>
+  </form>
   </main><!-- /.container -->
   <footer class="text-muted mt-5">
     <div class="container">
