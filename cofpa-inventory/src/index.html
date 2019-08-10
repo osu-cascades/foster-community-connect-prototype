@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <!-- Removed Second Nav Bar There's -->
+    <!-- <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="navbar-nav">
             <a class="nav-item nav-link" routerLink="/">Home</a>
             <a class="nav-item nav-link" routerLink="/get">Get</a>
         </div>
-    </nav>
+    </nav>  -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Foster. Community. Connect.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +28,13 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active mr-3">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" routerLink="/">Home</a></span></a>
             </li>
             <li class="nav-item mr-3">
               <a class="btn btn-success btn-sm mt-1" href="giveform.html">Give</a>
             </li>
             <li class="nav-item mr-3">
-              <a class="btn btn-success btn-sm mt-1" href="getform.html">Get</a>
+              <a class="nav-item nav-link" routerLink="/get">Get</a>
             </li>
       </nav>
     
