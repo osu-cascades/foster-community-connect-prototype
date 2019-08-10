@@ -116,7 +116,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cofpa-inventory:serve:production"
+              "Target": "cofpa-inventory:serve:production"
             }
           }
         },
