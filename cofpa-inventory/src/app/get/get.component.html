@@ -1,4 +1,4 @@
-<body id="home">  
+<body ng-app="myApp" id="home">  
     <main role="main" class="container">
           <div class="starter-template">
             <h1>Foster. Community. Connect.</h1>
@@ -31,7 +31,7 @@
               <textarea class="form-control" id="items__requested" input type="text" rows="10"></textarea>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="button" value="submit">Submit Request</button>
+            <button (click)="logText()" class="btn btn-primary btn-lg btn-block" type="button" value="submit">Submit Request</button>
             <p><br></p>
         </form>
     </main><!-- /.container -->
