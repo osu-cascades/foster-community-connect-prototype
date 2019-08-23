@@ -1,13 +1,14 @@
-<body id="home">  
+<!DOCTYPE html>
+<html>
+<body ng-app="myApp">  
     <main role="main" class="container">
-            
         <div class="starter-template">
             <h1>Foster. Community. Connect.</h1>
             <p class="lead">Bridging the gap between central oregon and it's children in foster care.
             </p>
             <h3>Donation Form</h3>
         </div>
-        <form id="request-form" method="POST" action="/request">
+        <form id="request-form">
             <div class="row">
                 <div class="col">First Name
                     <input type="text" class="form-control" id="first_name" placeholder="First name">
@@ -31,9 +32,12 @@
                 <textarea class="form-control" id="items__requested" input type="text" rows="10"></textarea>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit" value="submit">Submit Donation</button>
+
+
+            <button (click)="logText()" class="btn btn-primary btn-lg btn-block" type="button" value="submit">Submit Request</button>
             <p><br></p>
         </form>
-    </main><!-- /.container -->
+    </main>
+    <!-- /.container -->
 </body>
-
+</html>
