@@ -18,7 +18,13 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/index.html' })
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new webpack.DefinePlugin({
+            // global app config object
+            config: JSON.stringify({
+                apiUrl: 'http://localhost:3000/ff792xyp872'
+            })
+        })
     ],
     devServer: {
         historyApiFallback: true

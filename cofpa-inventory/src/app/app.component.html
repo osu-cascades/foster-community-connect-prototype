@@ -17,3 +17,9 @@
         </div>
     </div>
 </div>
+
+<button (click)="getPosts()">Get Posts</button>
+
+<div NgFor="let post of posts | async">
+    {{post | json}}
+</div>
