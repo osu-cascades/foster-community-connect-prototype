@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-// import { MessageService } from './message.service';
+import { MessageService } from './services/message.service';
 import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { GetComponent } from './get';
@@ -21,8 +21,8 @@ import { HomeComponent } from './home';
     BrowserModule,
     appRoutingModule,
     HttpClientModule,
-    FormsModule
-    // MessageService
+    FormsModule,
+    MessageService
   ],
   providers: [],
   bootstrap: [AppComponent]
