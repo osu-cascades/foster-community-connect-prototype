@@ -10,7 +10,8 @@ import {HttpClient} from '@angular/common/http';
 export class MessageService {
 
   constructor(private http: HttpClient) { }
-  sendMessage(body) {
-    return this.http.post('http://localhost:3000/ff792xyp872', body)
+  async sendMessage(body) {
+    console.log({body});
+    return this.http.get('http://localhost:3000/ff792xyp872').toPromise()
   }
 }

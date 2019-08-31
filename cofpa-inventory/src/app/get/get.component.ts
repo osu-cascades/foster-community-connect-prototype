@@ -7,8 +7,7 @@ import { MessageService } from '../services/message.service';
 export class GetComponent {
     constructor(public messageService: MessageService) {}
     logText(){
-        
+        this.messageService.sendMessage("scooby");
         console.log("clicked");
-        alert("clicked");
     }
 }
