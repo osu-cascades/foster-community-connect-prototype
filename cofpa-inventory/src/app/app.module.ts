@@ -21,10 +21,9 @@ import { HomeComponent } from './home';
     BrowserModule,
     appRoutingModule,
     HttpClientModule,
-    FormsModule,
-    MessageService
+    FormsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

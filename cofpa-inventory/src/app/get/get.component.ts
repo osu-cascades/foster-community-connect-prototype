@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+//import {HttpClient} from '@angular/common/http';
 import { MessageService } from '../services/message.service';
 
 
 @Component({ templateUrl: 'get.component.html' })
 export class GetComponent {
-    logText(body){
+    constructor(public messageService: MessageService) {}
+    logText(){
+        
         console.log("clicked");
         alert("clicked");
     }
