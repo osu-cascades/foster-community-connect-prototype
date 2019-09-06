@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { GetComponent } from './get';
 import { GiveComponent } from './give';
 import { HomeComponent } from './home';
+import { DonationFormComponent } from './donation-form/donation-form.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HomeComponent } from './home';
     AppComponent,
     HomeComponent,
     GiveComponent,
-    GetComponent
+    GetComponent,
+    DonationFormComponent
   ],
   imports: [
     BrowserModule,
