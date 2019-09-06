@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DonationForm} from '../donation-form';
 
 @Component({
   selector: 'app-donation-form',
@@ -11,5 +12,13 @@ export class DonationFormComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  model = new DonationForm('','','','','');
+
+  submitted = false;
+
+  onSubmit() {this.submitted = true};
+
+  get diagnostic() {return JSON.stringify(this.model);}
 
 }
