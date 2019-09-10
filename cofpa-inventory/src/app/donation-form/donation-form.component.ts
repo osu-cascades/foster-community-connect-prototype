@@ -21,4 +21,8 @@ export class DonationFormComponent implements OnInit {
 
   get diagnostic() {return JSON.stringify(this.model);}
 
+  newDonationForm() {
+    this.model = new DonationForm('', '', '','','');
+  }
+
 }
