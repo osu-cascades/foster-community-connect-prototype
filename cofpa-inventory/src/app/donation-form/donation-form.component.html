@@ -9,25 +9,26 @@
       <h3>Donation Form</h3>
   </div>
   <form #donationForm="ngForm">
+    {{diagnostic}}
       <div class="form-group">
           <label for="firstName">First Name</label>
-          <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required [(ngModel)]="model.firstName" name="firstName">{{model.firstName}}
+          <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required [(ngModel)]="model.firstName" name="firstName">
       </div>
       <div class="form-group">
           <label for="lastName">Last Name</label>
-          <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required required [(ngModel)]="model.lastName" name="lastName">{{model.lastName}}
+          <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required required [(ngModel)]="model.lastName" name="lastName">
       </div>
       <div class="form-group">
           <label for="email">Email address</label>
-          <input type="text" class="form-control" id="email" placeholder="Enter email" required>
+          <input type="text" class="form-control" id="email" placeholder="Enter email" required [(ngModel)]="model.email" name="email">
       </div>
       <div class="form-group">
           <label for="phoneNumber">Phone Number</label>
-          <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
+          <input type="text" class="form-control" id="phoneNumber" placeholder="Enter phone number" required [(ngModel)]="model.phoneNumber" name="phoneNumber">
       </div>
       <div class="form-group">
           <label for="description"><h6>What item(s) are you donating?</h6></label>
-          <textarea class="form-control" id="description" input type="text" rows="10" required></textarea>
+          <textarea class="form-control" id="description" input type="text" rows="10" required [(ngModel)]="model.description" name="description"></textarea>
       </div>
       <hr class="mb-4">
       <button (click)="logText()" class="btn btn-success btn-lg btn-block" type="submit" value="submit">Submit Donation</button>
