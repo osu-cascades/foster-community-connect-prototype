@@ -6,8 +6,9 @@
       <h1>Foster. Community. Connect.</h1>
       <p class="lead">Bridging the gap between central oregon and it's children in foster care.
       </p>
-      <h3>Donation Form</h3>
   </div>
+  <div [hidden]="submitted">
+  <h3 class="text-center">Donation Form</h3>
   <form (ngSubmit)="onSubmit()" #donationForm="ngForm">
       <div class="form-group">
           <label for="firstName">First Name</label>
@@ -55,6 +56,29 @@
       <button type="submit" class="btn btn-success btn-lg btn-block" [disabled]="!donationForm.form.valid">Submit</button>
       <p><br></p>
     </form>
+    </div>
+    <div [hidden]="!submitted">
+      <h2 class="text-success">Thank you {{model.firstName}} for supporting Central Oregon's foster families!</h2>
+      <div class="row">
+        <div class="col-xs-3 font-weight-bold mt-4">Name: </div>
+        <div class="col-xs-9 mt-4 ml-1"> {{ model.firstName }} {{ model.lastName }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 font-weight-bold mt-2">Phone Number: </div>
+        <div class="col-xs-9 mt-2 ml-1"> {{ model.phoneNumber }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 font-weight-bold mt-2">Email Address: </div>
+        <div class="col-xs-9 mt-2 ml-1"> {{ model.email }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 font-weight-bold mt-2">Item's to Donate: </div>
+        <div class="col-xs-9 mt-2 ml-1"> {{ model.description }}</div>
+      </div>
+      <h4 class="text-success mt-4">A volunteer from Central Oregon Foster Parents Association will be contacting you soon to arrange a drop-off/pick-up time for the item(s) you are donating.</h4>
+      <br>
+      <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+    </div>
   </main>
   <!-- /.container -->
 </body>
