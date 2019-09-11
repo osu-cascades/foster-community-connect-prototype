@@ -20,14 +20,18 @@ export class DonationFormComponent implements OnInit {
   submitted = false;
 
   onSubmit() {
+    console.log('First Name On Submit: ', this.model.firstName);
     this.submitted = true;
-    this.messageService.sendMessage("scooby");
+
+    // this.model= new DonationForm()
+    // console.log(model.firstName);
+    this.messageService.sendMessage(this.model);
   };
 
   get diagnostic() {return JSON.stringify(this.model);}
 
-  newDonationForm() {
-    this.model = new DonationForm('', '', '','','');
-  }
+  // newDonationForm() {
+  //   this.model = new DonationForm('', '', '','','');
+  // }
 
 }
