@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DonationForm} from '../donation-form';
+import { MessageService } from '../services/message.service';
+
 
 @Component({
   selector: 'app-donation-form',
@@ -8,7 +10,7 @@ import { DonationForm} from '../donation-form';
 })
 export class DonationFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public messageService: MessageService) { }
 
   ngOnInit() {
   }
@@ -17,7 +19,10 @@ export class DonationFormComponent implements OnInit {
 
   submitted = false;
 
-  onSubmit() {this.submitted = true};
+  onSubmit() {
+    this.submitted = true;
+    this.messageService.sendMessage("scooby");
+  };
 
   get diagnostic() {return JSON.stringify(this.model);}
 
