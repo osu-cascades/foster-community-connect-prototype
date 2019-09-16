@@ -12,6 +12,6 @@ export class MessageService {
   constructor(private http: HttpClient) { }
   async sendMessage(body) {
     console.log({body});
-    return this.http.get(`http://localhost:3000/ff792xyp872?firstName=FIXME`).subscribe()
+    return this.http.get(`http://localhost:3000/ff792xyp872?firstName=firstName&lastName=last&email=emailAddress&phoneNumber=phone&description=items`).subscribe()
   }
 }
