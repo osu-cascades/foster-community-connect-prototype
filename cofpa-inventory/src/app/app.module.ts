@@ -9,6 +9,7 @@ import { GetComponent } from './get';
 import { GiveComponent } from './give';
 import { HomeComponent } from './home';
 import { DonationFormComponent } from './donation-form/donation-form.component';
+import { RequestFormComponent } from './request-form/request-form.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
     HomeComponent,
     GiveComponent,
     GetComponent,
-    DonationFormComponent
+    DonationFormComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,

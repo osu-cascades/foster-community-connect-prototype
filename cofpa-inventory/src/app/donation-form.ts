@@ -4,6 +4,7 @@ export class DonationForm {
         public lastName: string,
         public email: string,
         public phoneNumber: string,
-        public description: string
+        public description: string,
+        public request: boolean
       ) {  }
 }
