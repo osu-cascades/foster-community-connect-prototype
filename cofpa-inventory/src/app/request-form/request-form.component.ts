@@ -8,7 +8,7 @@ import { MessageService } from '../services/message.service';
   templateUrl: './request-form.component.html',
   styleUrls: ['./request-form.component.css']
 })
-export class DonationFormComponent implements OnInit {
+export class RequestFormComponent implements OnInit {
 
   constructor(public messageService: MessageService) { }
 
