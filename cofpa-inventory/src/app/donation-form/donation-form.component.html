@@ -10,11 +10,6 @@
   <div [hidden]="submitted">
   <h3 class="text-center">Donation Form</h3>
   <form (ngSubmit)="onSubmit()" #donationForm="ngForm">
-      <!-- <div [hidden]="input" class="form-group">
-          <label for="request"></label>
-          <input type="boolean" class="form-control" id="request" [(ngModel)]="model.request" name="request" #name="ngModel" model.request=false>
-          Please enter your first name
-          </div> -->
       <div class="form-group">
           <label for="firstName">First Name</label>
           <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required [(ngModel)]="model.firstName" name="firstName" #name="ngModel">

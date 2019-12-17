@@ -15,7 +15,7 @@ export class DonationFormComponent implements OnInit {
   ngOnInit() {
   }
   
-  model = new DonationForm('','','','','',false);
+  model = new DonationForm('','','','','',"Donation");
 
   submitted = false;
 
